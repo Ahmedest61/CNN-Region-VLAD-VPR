@@ -14,7 +14,7 @@ Configuration2=["400","256"]
 
 Settings = [Configuration1,Configuration2]
 
-dir = "/home/ak17206/MSD/VPR-CNN/Mapillary/T-RO/CNN-Region-VLAD-VPR/"
+dir = "../CNN-Region-VLAD-VPR/"
 
 
 def load_obj(name ):
