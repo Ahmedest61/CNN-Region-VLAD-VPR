@@ -7,6 +7,17 @@
 4) Garden Point
 5) Syhthesized Nordland
 
+If you use this dataset, please cite the following publication:
+
+```
+@article{khaliq2018holistic,
+  title={A Holistic Visual Place Recognition Approach using Lightweight CNNs for Severe ViewPoint and Appearance Changes},
+  author={Khaliq, Ahmad and Ehsan, Shoaib and Milford, Michael and McDonald-Maier, Klaus},
+  journal={arXiv preprint arXiv:1811.03032},
+  year={2018}
+}
+```
+
 - Each dataset contains two traverses of the same route under different viewpoints and conditions
 	- A "Result" folder in each dataset contains the matched and unmatched image files using the proposed approach
 		- For each test image, the retrived image is correct if its name is written in green color else red color shows it is treated as unmatched
