@@ -7,7 +7,7 @@
 4) Garden Point
 5) Syhthesized Nordland
 
-If you use this dataset, please cite the following publication:
+If you use these datasets, please cite the following publication:
 
 ```
 @article{khaliq2018holistic,
