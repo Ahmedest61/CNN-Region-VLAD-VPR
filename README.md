@@ -33,17 +33,17 @@ If you use these datasets, please cite the following publication:
 
 Configuration 1: N = 200, V=128
  	(AUC-PR Results)
-1) Berlin Halenseestrasse: 0.787
-2) Berlin Kudamm: 0.297
+1) Berlin Halenseestrasse: 0.754
+2) Berlin Kudamm: 0.298
 3) Berlin A100: 0.7381
 4) Garden Point: 0.6540
-5) Synthesized Nordland: 0.409
+5) Synthesized Nordland: 0.539
 
 Configuration 2: N = 400, V=256
 	(AUC-PR Results)
-1) Berlin Halenseestrasse: 0.825
+1) Berlin Halenseestrasse: 0.808
 2) Berlin Kudamm: 0.395
 3) Berlin A100: 0.7117
 4) Garden Point: 0.7225
-5) Synthesized Nordland: 0.456
+5) Synthesized Nordland: 0.547
 
