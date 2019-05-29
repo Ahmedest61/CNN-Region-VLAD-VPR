@@ -6,8 +6,8 @@ from pylab import imread,subplot,imshow,show
 import matplotlib.gridspec as gridspec
 
 DATASETS = ["berlin_halenseestrasse","berlin_kudamm","berlin_A100","GardenPointWalking","Synthesized_Nordland"]
-REFERENCE_DATASET = ["berlin_halenseestrasse_2","berlin_kudamm_1","berlin_A100_2","night_right","summer"]
-TEST_DATASET = ["berlin_halenseestrasse_1","berlin_kudamm_2","berlin_A100_1","day_left","winter"]
+REFERENCE_DATASET = ["berlin_halenseestrasse_1","berlin_kudamm_1","berlin_A100_2","night_right","summer"]
+TEST_DATASET = ["berlin_halenseestrasse_2","berlin_kudamm_2","berlin_A100_1","day_left","winter"]
 
 Configuration1=["200","128"]
 Configuration2=["400","256"]
@@ -21,7 +21,7 @@ def load_obj(name ):
     with open( name, 'rb') as f:
         return pickle.load(f)
     
-datasetIndex = 3
+datasetIndex = 4
 img_for=".jpg"
 #imgTag= "images-"
 imgTag= ""
