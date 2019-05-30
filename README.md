@@ -12,7 +12,7 @@ If you use these datasets, please cite the following publication:
 ```
 @article{khaliq2018holistic,
   title={A Holistic Visual Place Recognition Approach using Lightweight CNNs for Severe ViewPoint and Appearance Changes},
-  author={Khaliq, Ahmad and Ehsan, Shoaib and Milford, Michael and McDonald-Maier, Klaus},
+  author={Khaliq, Ahmad and Chen, Zetao and Ehsan, Shoaib and Milford, Michael and McDonald-Maier, Klaus},
   journal={arXiv preprint arXiv:1811.03032},
   year={2018}
 }
