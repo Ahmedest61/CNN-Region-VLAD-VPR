@@ -75,7 +75,62 @@ def showAUCPR():
         plt.savefig(os.path.join(resultPath,"AUC-PR"+"_"+str(N)+"_"+str(V)+'.jpg'),dpi=200)
         plt.close()                             
 
+def groundTruth():
+    
+    folderPath="../..../berlin_kudamm/"
+    ImgFolderList=["berlin_kudamm_2","berlin_kudamm_1"]
+    keylist,values = list(),defaultdict(list)
+    ImgVsGps = defaultdict(list)   
+    folder = list() 
+    latLongList = list()
+        
+    for ind,path in enumerate(ImgFolderList):
+        folder.append(os.path.join(folderPath,path))
+        for file in os.listdir(folder[ind]):
+            if file.endswith(".jpg"):
+                if "." in file[0]:
+                    continue
+                keylist.append(file.split(".jpg")[0])
+        
+        save_obj(keylist,os.path.join(folder[ind],"imgIds.pickle"))  
+        keyList = load_obj(os.path.join(folder[ind],"imgIds.pickle"))
+        
+        latLongList.clear()
+        
+        
+        for file in keyList:
+            with open(os.path.join(folder[ind],file+".jpg.json")) as f:
+                Data = json.load(f)
+                latLongList.append(Data["lon"])
+                latLongList.append(Data["lat"])
+                ImgVsGps[file]=latLongList.copy()
+                latLongList.clear()
+                    
+        save_obj(OrderedDict(sorted(ImgVsGps.items(), key=operator.itemgetter(1))), os.path.join(folder[ind],"imgsVsGps.pickle") )       
+        values[ind]=(load_obj(os.path.join(folder[ind],"imgsVsGps.pickle")))
+        print(values[ind])
+        keylist.clear()
+        ImgVsGps.clear()
 
+    path1,path2, dif = defaultdict(list),defaultdict(list) , defaultdict(list) 
+     
+    for key1, val1 in values[0].items():
+        for key2, val2 in values[1].items():
+            dif[key2] = math.sqrt(sum([(a - b)**2 for a, b in zip(val1, val2)]))
+        path1[key1] = list(OrderedDict(sorted(dif.items(), key=operator.itemgetter(1),reverse=False)).keys())[:5]  
+        dif.clear()
+
+    print(path1)
+    save_obj(path1, os.path.join(folder[0],"groundTruth.pickle")) 
+    
+    for key1, val1 in values[1].items():
+        for key2, val2 in values[0].items():
+            dif[key2] = math.sqrt(sum([(a - b)**2 for a, b in zip(val1, val2)]))
+        path2[key1] = list(OrderedDict(sorted(dif.items(), key=operator.itemgetter(1),reverse=False)).keys())[:5]   
+        dif.clear()
+        
+    save_obj(path2,os.path.join(folder[1],"groundTruth.pickle"))
+    print(path2)
 
 def showResults():
     
