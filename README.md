@@ -29,7 +29,7 @@ If you use these datasets, please cite the following publication:
 - There is another folder "Vocabulary", containing dataset "2.6K", employed for making regional dictionaries
 	- Two pickle files are there, one with N= 400 regions clustered into V= 64,128,256 regions, where the other file contains N= 100,200,300 regions clustered again into V= 64,128,256 regions each. Each file is again a nested dictionary with nested keys as Region (N) and  Cluster (V). 
 
-- A python script "produceResults.py" can generate the results i.e. AUC-PR and retrieved images for both the configurations using the Pickle files. The user just need to defined the "datasetIndex" and "dir" parameter.
+- A python script "produceResults.py" can generate the ground truth for Berlin datasets and all the datasets' results i.e. AUC-PR and retrieved images for both the configurations using the Pickle files. The user just need to defined the "datasetIndex" and "dir" parameter.
 
 Configuration 1: N = 200, V=128
  	(AUC-PR Results)
