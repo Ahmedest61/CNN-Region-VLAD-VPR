@@ -11,10 +11,17 @@ If you use these datasets, please cite the following publication:
 
 ```
 @article{khaliq2018holistic,
-  title={A Holistic Visual Place Recognition Approach using Lightweight CNNs for Severe ViewPoint and Appearance Changes},
-  author={Khaliq, Ahmad and Chen, Zetao and Ehsan, Shoaib and Milford, Michael and McDonald-Maier, Klaus},
-  journal={arXiv preprint arXiv:1811.03032},
-  year={2018}
+  	author={A. {Khaliq} and S. {Ehsan} and Z. {Chen} and M. {Milford} and K. {McDonald-Maier}},
+	journal={IEEE Transactions on Robotics},
+	title={A Holistic Visual Place Recognition Approach Using Lightweight CNNs for Significant ViewPoint and Appearance Changes},
+	year={2019},
+	volume={},
+	number={},
+	pages={1-9},
+	keywords={Convolutional neural network (CNN);feature encoding;robot localization;vector of locally aggregated descriptors (VLADs);visual place recognition (VPR)},
+	doi={10.1109/TRO.2019.2956352},
+	ISSN={1941-0468},
+	month={},
 }
 ```
 
