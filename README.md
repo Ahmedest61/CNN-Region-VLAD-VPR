@@ -11,7 +11,7 @@ If you use these datasets, please cite the following publication:
 
 ```
 @article{khaliq2018holistic,
-  	author={A. {Khaliq} and S. {Ehsan} and Z. {Chen} and M. {Milford} and K. {McDonald-Maier}},
+  	author={Khaliq, Ahmad and Ehsan, Shoaib and Chen, Zetao and Milford, Michael and McDonald-Maier, Klaus},
 	journal={IEEE Transactions on Robotics},
 	title={A Holistic Visual Place Recognition Approach Using Lightweight CNNs for Significant ViewPoint and Appearance Changes},
 	year={2019},
