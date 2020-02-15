@@ -1,4 +1,4 @@
-# A Holistic Visual Place Recognition Approach using Lightweight CNNs for Severe ViewPoint and Appearance Changes
+# A Holistic Visual Place Recognition Approach using Lightweight CNNs for Significant ViewPoint and Appearance Changes
 
 - There are five benchmark datasets tested on the proposed methodology:
 1) Berlin Halenseestrasse
@@ -7,7 +7,7 @@
 4) Garden Point
 5) Syhthesized Nordland
 
-If you use these datasets, please cite the following publication:
+If you use these datasets and code, please cite the following publication:
 
 ```
 @article{khaliq2018holistic,
@@ -36,7 +36,9 @@ If you use these datasets, please cite the following publication:
 - There is another folder "Vocabulary", containing dataset "2.6K", employed for making regional dictionaries
 	- Two pickle files are there, one with N= 400 regions clustered into V= 64,128,256 regions, where the other file contains N= 100,200,300 regions clustered again into V= 64,128,256 regions each. Each file is again a nested dictionary with nested keys as Region (N) and  Cluster (V). 
 
-- A python script "produceResults.py" can generate the ground truth for Berlin datasets and all the datasets' results i.e. AUC-PR and retrieved images for both the configurations using the Pickle files. The user just need to defined the "datasetIndex" and "dir" parameter.
+- A python script "produceResults.py" can generate the ground truth for Berlin datasets and all the datasets' results i.e. AUC-PR and retrieved images for both the configurations using the Pickle files. The user just needs to defined the "datasetIndex" and "dir" parameter.
+
+- A python script "Region-VLAD.py" is the main implementation file. The user needs to externally download  the "alexnet_places365.caffemodel" from https://github.com/CSAILVision/places365, set the paths and have pythonic libararies including caffe installed to run the script. The script loads the model, pass down the sample test and reference image and returns the matching score.
 
 Configuration 1: N = 200, V=128
  	(AUC-PR Results)
