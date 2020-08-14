@@ -1,5 +1,7 @@
 # A Holistic Visual Place Recognition Approach using Lightweight CNNs for Significant ViewPoint and Appearance Changes
 
+
+![result_image](frontpage.jpg)
 - There are five benchmark datasets tested on the proposed methodology:
 1) Berlin Halenseestrasse
 2) Berlin Kudamm
